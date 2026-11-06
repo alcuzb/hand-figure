@@ -1,0 +1,17 @@
+:root{--bg:#12161c;--fg:#e8ecf1;--ac:#ffb703;--mu:#8b95a3}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,sans-serif}
+header{display:flex;justify-content:space-between;align-items:center;padding:12px 16px}
+h1{margin:0;font-size:1.3rem;letter-spacing:.02em}
+.lang button{background:none;border:1px solid var(--mu);color:var(--fg);padding:4px 10px;cursor:pointer}
+.lang button:first-child{border-radius:6px 0 0 6px}.lang button:last-child{border-radius:0 6px 6px 0;border-left:0}
+.lang button.on{background:var(--ac);color:#000;border-color:var(--ac)}
+main{max-width:960px;margin:0 auto;padding:0 16px 32px}
+.stage{border-radius:12px;overflow:hidden;background:#000}
+canvas{display:block;width:100%;height:auto}
+#hint{min-height:3em;color:var(--mu)}
+#album{display:flex;gap:8px;margin-bottom:12px}
+#album canvas{width:30%;border-radius:6px;border:2px solid var(--ac)}
+#dl{background:var(--ac);color:#000;border:0;border-radius:8px;padding:10px 18px;font-weight:600;cursor:pointer}
+#dl:disabled{opacity:.4;cursor:default}
+button:focus-visible{outline:2px solid #fff;outline-offset:2px}
